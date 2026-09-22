@@ -87,24 +87,21 @@ input:focus {
     box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
 }
 
-/* Botões */
+/* Área dos botões */
 .botoes {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 12px;
-
     margin-top: 28px;
 }
 
+/* Estilo geral dos botões */
 button {
-    padding: 13px 10px;
+    padding: 14px 10px;
 
     border: none;
     border-radius: 10px;
 
-    background: #2563eb;
     color: white;
 
     font-size: 15px;
@@ -113,20 +110,54 @@ button {
     cursor: pointer;
 
     transition: 0.25s ease;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-button:hover {
-    background: #1d4ed8;
-
-    transform: translateY(-2px);
-
-    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.3);
+/* Somar */
+button:nth-child(1) {
+    background: #16a34a;
 }
 
+button:nth-child(1):hover {
+    background: #15803d;
+    transform: translateY(-3px);
+}
+
+/* Subtrair */
+button:nth-child(2) {
+    background: #dc2626;
+}
+
+button:nth-child(2):hover {
+    background: #b91c1c;
+    transform: translateY(-3px);
+}
+
+/* Multiplicar */
+button:nth-child(3) {
+    background: #9333ea;
+}
+
+button:nth-child(3):hover {
+    background: #7e22ce;
+    transform: translateY(-3px);
+}
+
+/* Dividir */
+button:nth-child(4) {
+    background: #ea580c;
+}
+
+button:nth-child(4):hover {
+    background: #c2410c;
+    transform: translateY(-3px);
+}
+
+/* Efeito ao clicar */
 button:active {
-    transform: scale(0.97);
+    transform: scale(0.96);
 }
-
 /* Resultado */
 #resultado {
     margin-top: 28px;
